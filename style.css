@@ -30,8 +30,9 @@ a {
 }
 h1,
 h2 {
-  font-size: 2.2rem;
+  font-size: 2.3rem;
   color: var(--main-text-color);
+  font-weight: 600;
 }
 
 h3 {
@@ -41,19 +42,94 @@ h4 {
   font-size: 1rem;
 }
 p {
-  font-family: var(--primary-font);
+  color: var(--main-text-color);
   font-size: 1.25rem;
 }
 button {
-  width: 80%;
-  background: black;
+  width: 200px;
+
   border: none;
   color: var(--secondary-text-color);
-
+  border-radius: 100px;
   text-transform: uppercase;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  font-size: 1.5rem;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  background: #3cdbc0 0% 0% no-repeat padding-box;
+  box-shadow: -4px -4px 10px #3a3a3ab3;
+}
+nav {
+  background: var(--bg-dark-gray-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  height: 100px;
+}
+.logo {
+  width: 120px;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+#header-wrapper {
+  background-image: url(assets/bg-dark2.png);
+  background-size: cover;
+  background-position: 59% 42%;
+  padding: 1.5rem;
+}
+.subtitle p {
+  font-size: 0.875rem;
+  margin-top: 1em;
+}
+.subtitle {
+  margin-bottom: 2em;
+}
+.title {
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+.title span {
+  color: var(--turqouise-color);
   display: block;
-  margin: 0 auto;
+  font-weight: 400;
+  font-size: 2rem;
+}
+.toggle {
+  width: 100px;
+  height: 40px;
+  background: transparent
+    linear-gradient(90deg, #c326be 0%, #22737f 49%, #35c625 100%) 0% 0%
+    no-repeat padding-box;
+  box-shadow: -3px -3px 10px #4a4a4a;
+  border-radius: 100px;
+
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 0.2em;
+}
+.toggle-switch {
+  width: 35px;
+  height: 35px;
+  border-radius: 100px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 3px 3px 6px #000000;
+}
+img {
+  width: 80px;
+}
+.subtitle span {
+  display: flex;
+  justify-content: flex-end;
+}
+.align-title {
+  text-align: right;
+  margin-top: 1em;
 }
