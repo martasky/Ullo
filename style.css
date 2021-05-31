@@ -43,11 +43,14 @@ h3 {
   margin-bottom: 1em;
 }
 h4 {
-  font-size: 1rem;
+  font-size: 1.5rem;
+  color: var(--main-text-color);
+  text-transform: uppercase;
+  margin-bottom: 1em;
 }
 p {
   color: var(--main-text-color);
-  font-size: 1.25rem;
+  font-size: 1.1rem;
 }
 section {
   padding: 1.5rem;
@@ -68,8 +71,8 @@ button {
   text-align: center;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
-  background: #3cdbc0 0% 0% no-repeat padding-box;
-  box-shadow: -4px -4px 10px #3a3a3ab3;
+  background: var(--turqouise-color) 0% 0% no-repeat padding-box;
+  box-shadow: -4px -4px 10px rgba(58, 58, 58, 0.7);
 }
 nav {
   background: var(--bg-dark-gray-color);
@@ -144,6 +147,57 @@ img {
   margin-top: 1em;
 }
 
+/* -----------------------moods----------------------- */
+.moods h3 {
+  color: var(--main-text-color);
+  margin-bottom: 0.5em;
+}
+
+.moods {
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.moods:nth-of-type(1) {
+  background-image: url(assets/mood1.png);
+
+  background-size: 300%;
+  background-position: 40% 60%;
+}
+.secondary-button {
+  color: var(--turqouise-color);
+  background: transparent;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.25rem;
+  border: 2px solid var(--turqouise-color);
+  cursor: pointer;
+  text-transform: none;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 360px;
+  margin-top: 2em;
+  box-shadow: none;
+}
+.moods:nth-of-type(2) {
+  background-image: url(assets/mood2.png);
+  background-size: cover;
+  background-position: 40% 60%;
+}
+.moods:nth-of-type(3) {
+  background-image: url(assets/mood3.png);
+  background-size: cover;
+  background-position: 60% 40%;
+}
+.moods:nth-of-type(4) {
+  background-image: url(assets/mood4.png);
+  background-size: cover;
+  background-position: 20% 80%;
+}
 /* -----------------------benefits----------------------- */
 
 .benefit-description {
@@ -235,4 +289,46 @@ img {
   width: 1.95em;
   height: 1.95em;
   padding-right: 0.5em;
+}
+
+/* -----------------------footer----------------------- */
+
+footer p {
+  font-size: 1.1rem;
+  font-weight: normal;
+  margin-bottom: 1em;
+}
+footer div {
+  margin-bottom: 4em;
+}
+.some {
+  display: flex;
+}
+.some img {
+  margin-right: 2em;
+  width: 4em;
+  height: 4em;
+}
+.form-email input {
+  border-radius: 50px;
+  text-transform: uppercase;
+}
+
+.form-email input[type="email"] {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  font-size: 1.25rem;
+
+  border: none;
+  text-transform: none;
+
+  width: 100%;
+  max-width: 360px;
+  margin-top: 1em;
+}
+.form-email .secondary-button {
+  margin-top: 1em;
 }
