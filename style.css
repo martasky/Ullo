@@ -18,6 +18,7 @@ html {
 }
 img {
   max-width: 100%;
+  width: 100%;
   height: auto;
 }
 h1,
@@ -36,7 +37,10 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  color: var(--turqouise-color);
+  font-weight: 600;
+  margin-bottom: 1em;
 }
 h4 {
   font-size: 1rem;
@@ -44,6 +48,9 @@ h4 {
 p {
   color: var(--main-text-color);
   font-size: 1.25rem;
+}
+section {
+  padding: 1.5rem;
 }
 button {
   width: 200px;
@@ -66,10 +73,11 @@ nav {
   background: var(--bg-dark-gray-color);
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 1rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  height: 100px;
+  height: 80px;
 }
 .logo {
   width: 120px;
@@ -132,4 +140,28 @@ img {
 .align-title {
   text-align: right;
   margin-top: 1em;
+}
+
+/* -----------------------products----------------------- */
+#benefits {
+  background: var(--bg-dark-gray-color);
+}
+h3 span {
+  display: block;
+}
+.benefit-description {
+  color: var(--main-text-color);
+  font-size: 1.1875rem;
+  font-weight: 600;
+  text-align: center;
+}
+.benefit-card img {
+  border-radius: 50px;
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+.benefit-card {
+  margin-bottom: 2em;
 }
