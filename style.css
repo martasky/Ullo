@@ -357,9 +357,7 @@ footer div {
   .subtitle span {
     display: initial;
   }
-  h3 {
-    font-size: 1.8rem;
-  }
+
   p {
     font-size: 0.85rem;
   }
@@ -367,6 +365,9 @@ footer div {
     padding: 4em;
   }
   /* -----------------------moods----------------------- */
+  .moods h3 {
+    font-size: 1.8rem;
+  }
   .moods {
     height: 400px;
     display: flex;
@@ -558,24 +559,77 @@ footer div {
   }
 }
 @media screen and (min-width: 1100px) {
+  #header-wrapper {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+  nav {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+  section {
+    padding: 5em;
+  }
+
   /* -----------------------moods----------------------- */
   /* -----------------------benefits----------------------- */
   /* -----------------------products----------------------- */
+  .product-card img {
+    width: 90%;
+  }
   /* -----------------------reviews----------------------- */
+  #reviews {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-gap: 1.5rem;
+    justify-items: center;
+  }
   /* -----------------------footer----------------------- */
 }
 @media screen and (min-width: 1300px) {
+  #header-wrapper {
+    padding-left: 6em;
+    padding-right: 6em;
+  }
+  nav {
+    padding-left: 6em;
+    padding-right: 6em;
+  }
+  section {
+    padding: 6em;
+  }
   /* -----------------------moods----------------------- */
   /* -----------------------benefits----------------------- */
   /* -----------------------products----------------------- */
+  #products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 1.5rem;
+    justify-items: center;
+  }
   /* -----------------------reviews----------------------- */
+  #reviews {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 1.5rem;
+    justify-items: center;
+  }
   /* -----------------------footer----------------------- */
 }
 
 @media screen and (min-width: 1600px) {
   /* -----------------------moods----------------------- */
+  .moods {
+    height: 600px;
+  }
   /* -----------------------benefits----------------------- */
   /* -----------------------products----------------------- */
+  #products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 1.5rem;
+    justify-items: center;
+  }
   /* -----------------------reviews----------------------- */
   /* -----------------------footer----------------------- */
 }
