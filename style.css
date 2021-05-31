@@ -73,6 +73,7 @@ button {
   margin-bottom: 0.5em;
   background: var(--turqouise-color) 0% 0% no-repeat padding-box;
   box-shadow: -4px -4px 10px rgba(58, 58, 58, 0.7);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
 }
 nav {
   background: var(--bg-dark-gray-color);
@@ -236,7 +237,9 @@ img {
   margin-top: -0.5em;
 }
 .product-card {
-  background: #2f3136 0% 0% no-repeat padding-box;
+  background: rgba(47, 49, 54, 1) 0% 0% no-repeat padding-box;
+  box-shadow: -4px -4px 10px rgba(58, 58, 58, 0.7);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
   border-radius: 50px;
   padding: 1em;
   padding-bottom: 2em;
@@ -254,8 +257,13 @@ img {
 }
 
 /* -----------------------reviews----------------------- */
+#reviews {
+  /* background: red; */
+}
 .review-card {
-  background: #2f3136 0% 0% no-repeat padding-box;
+  background: rgba(47, 49, 54, 1) 0% 0% no-repeat padding-box;
+  box-shadow: -4px -4px 10px rgba(58, 58, 58, 0.7);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
   border-radius: 50px;
   padding: 2em;
   padding-top: 3em;
