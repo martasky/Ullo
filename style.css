@@ -395,15 +395,16 @@ footer div {
   /* -----------------------benefits----------------------- */
   #benefits {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 2em;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-gap: 2rem;
     justify-items: center;
   }
   #benefits h3 {
     grid-column: 1 / -1;
   }
   .benefit-card img {
-    width: 100%;
+    width: 293px;
+    height: 293px;
   }
   #benefits .benefit-card:last-of-type {
     grid-column: 1 / -1;
@@ -426,8 +427,8 @@ footer div {
   .product-card {
     width: 100%;
     margin-bottom: 0;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     border-radius: 25px;
   }
   .product-name {
@@ -435,6 +436,7 @@ footer div {
   }
   .product-price {
     font-size: 1rem;
+    margin-top: 0;
   }
   .product-card button {
     text-transform: none;
@@ -442,6 +444,7 @@ footer div {
     padding-bottom: 0.5em;
     width: 130px;
   }
+
   /* -----------------------reviews----------------------- */
   #reviews {
     display: grid;
@@ -489,6 +492,7 @@ footer div {
   .benefit-card img {
     border-radius: 25px;
     width: 100%;
+    height: auto;
   }
   .benefit-description {
     font-size: 0.75rem;
@@ -500,6 +504,9 @@ footer div {
     grid-gap: 1.5rem;
     justify-items: center;
   }
+  /* .product-image {
+    height: 7em;
+  } */
   /* -----------------------reviews----------------------- */
 
   .review-comment {
@@ -577,6 +584,12 @@ footer div {
   .product-card img {
     width: 90%;
   }
+  #products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-gap: 1.5rem;
+    justify-items: center;
+  }
   /* -----------------------reviews----------------------- */
   #reviews {
     display: grid;
@@ -623,6 +636,9 @@ footer div {
     height: 600px;
   }
   /* -----------------------benefits----------------------- */
+  .benefit-card img {
+    height: 293px;
+  }
   /* -----------------------products----------------------- */
   #products {
     display: grid;
