@@ -16,7 +16,7 @@ fetch("https://keaprojects21-50cf.restdb.io/rest/ullo-products", {
 function showProducts(data) {
   data.forEach((product) => {
     console.log(product);
-
+    console.log("chuj ci w dupe");
     showProduct(product);
   });
 }

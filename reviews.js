@@ -1,0 +1,33 @@
+fetch("https://keaprojects21-50cf.restdb.io/rest/ullo-reviews", {
+  method: "GET",
+  headers: {
+    "x-apikey": "602e38155ad3610fb5bb62bd",
+  },
+})
+  .then((res) => res.json())
+  .then((response) => {
+    console.log(response);
+    showReviews(response);
+  })
+  .catch((err) => {
+    console.error(err);
+  });
+
+function showReviews(data) {
+  data.forEach((review) => {
+    console.log(review);
+    console.log("chuj ci w dupe");
+
+    showReview(review);
+  });
+}
+function showReview(review) {
+  const tempRev = document.querySelector("template").content;
+  const clone = tempRev.cloneNode(true);
+
+  clone.querySelector(".review-title").textContent = review.title;
+  clone.querySelector(".review-comment").textContent = review.comment;
+
+  const rev = document.querySelector("#reviews");
+  rev.appendChild(clone);
+}
