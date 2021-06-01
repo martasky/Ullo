@@ -201,10 +201,11 @@ span img {
 }
 /* -----------------------benefits----------------------- */
 #benefits {
-  background-image: url(assets/gaussian2.png);
-  background-size: 100%;
-  background-repeat: repeat;
-  /* background-position: center; */
+  background-image: url(assets/gaussian3.png);
+  /* background-size: contain; */
+  background-repeat: repeat-y;
+  background-position-y: 95%;
+  background-position-x: 150%;
 }
 .benefit-description {
   color: var(--main-text-color);
@@ -220,6 +221,8 @@ span img {
   display: block;
   margin: 0 auto;
   margin-bottom: 1em;
+  box-shadow: -4px -4px 10px rgba(58, 58, 58, 0.7);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
 }
 .benefit-card {
   margin-bottom: 2em;
@@ -411,6 +414,14 @@ footer div {
     grid-gap: 2rem;
     justify-items: center;
   }
+  #benefits {
+    background-image: url(assets/gaussian3.png);
+    /* background-size: contain; */
+    background-size: 80%;
+    background-repeat: repeat-y;
+    background-position-y: -95%;
+    background-position-x: -100%;
+  }
   #benefits h3 {
     grid-column: 1 / -1;
   }
@@ -502,6 +513,14 @@ footer div {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 2rem;
   }
+  #benefits {
+    background-image: url(assets/gaussian3.png);
+    background-size: 60%;
+    background-repeat: repeat-x;
+    background-position-y: 120%;
+    background-position-x: 130%;
+  }
+
   /* #benefits .benefit-card:last-of-type {
     grid-column: initial;
     width: 100%;
