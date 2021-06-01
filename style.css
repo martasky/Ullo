@@ -29,6 +29,11 @@ p,
 a {
   font-family: var(--primary-font);
 }
+a {
+  color: var(--secondary-text-color);
+  text-decoration: none;
+  font-weight: 500;
+}
 h1,
 h2 {
   font-size: 2.3rem;
@@ -59,7 +64,7 @@ section {
 }
 button {
   width: 150px;
-
+  cursor: pointer;
   border: none;
   color: var(--secondary-text-color);
   border-radius: 100px;
@@ -854,7 +859,7 @@ footer div {
 @media screen and (min-width: 1600px) {
   /* -----------------------moods----------------------- */
   .moods {
-    height: 600px;
+    height: 800px;
   }
   /* -----------------------benefits----------------------- */
   .benefit-card img {
