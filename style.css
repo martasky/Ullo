@@ -200,12 +200,21 @@ span img {
   background-position: 20% 80%;
 }
 /* -----------------------benefits----------------------- */
-#benefits {
+/* #benefits {
   background-image: url(assets/gaussian3.png);
-  /* background-size: contain; */
+
   background-repeat: repeat-y;
   background-position-y: 95%;
   background-position-x: 150%;
+}
+ */
+
+#benefits {
+  background-image: url(assets/gaussian3.png), url(assets/gaussian3.png);
+
+  background-size: 80%, 80%;
+  background-repeat: no-repeat, no-repeat;
+  background-position: left bottom, right top;
 }
 .benefit-description {
   color: var(--main-text-color);
@@ -270,7 +279,11 @@ span img {
 
 /* -----------------------reviews----------------------- */
 #reviews {
-  /* background: red; */
+  background-image: url(assets/gaussian4.png), url(assets/gaussian4.png);
+
+  background-size: 60%, 60%;
+  background-repeat: no-repeat, no-repeat;
+  background-position: left 101%, right top;
 }
 .review-card {
   background: rgba(47, 49, 54, 1) 0% 0% no-repeat padding-box;
@@ -415,12 +428,11 @@ footer div {
     justify-items: center;
   }
   #benefits {
-    background-image: url(assets/gaussian3.png);
-    /* background-size: contain; */
-    background-size: 80%;
-    background-repeat: repeat-y;
-    background-position-y: -95%;
-    background-position-x: -100%;
+    background-image: url(assets/gaussian4.png), url(assets/gaussian4.png);
+
+    background-size: 80%, 80%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: left bottom, right top;
   }
   #benefits h3 {
     grid-column: 1 / -1;
@@ -479,6 +491,13 @@ footer div {
     grid-gap: 1.5rem;
     justify-items: center;
   }
+  #reviews {
+    background-image: url(assets/gaussian3.png), url(assets/gaussian3.png);
+
+    background-size: 80%, 80%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: left bottom, right top;
+  }
   #reviews h3 {
     grid-column: 1 / -1;
   }
@@ -514,11 +533,11 @@ footer div {
     grid-gap: 2rem;
   }
   #benefits {
-    background-image: url(assets/gaussian3.png);
-    background-size: 60%;
-    background-repeat: repeat-x;
-    background-position-y: 120%;
-    background-position-x: 130%;
+    background-image: url(assets/gaussian3.png), url(assets/gaussian3.png);
+
+    background-size: 40%, 40%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: left bottom, right top;
   }
 
   /* #benefits .benefit-card:last-of-type {
@@ -554,6 +573,13 @@ footer div {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 1.5rem;
     justify-items: center;
+  }
+  #reviews {
+    background-image: url(assets/gaussian3.png), url(assets/gaussian3.png);
+
+    background-size: 40%, 40%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, 85% 85%;
   }
   .review-comment {
     font-size: 0.75rem;
@@ -708,6 +734,13 @@ footer div {
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     grid-gap: 2rem;
     justify-items: center;
+  }
+  #reviews {
+    background-image: url(assets/gaussian3.png), url(assets/gaussian3.png);
+
+    background-size: 40%, 40%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, 85% 75%;
   }
   .review-card {
     padding-left: 2em;
