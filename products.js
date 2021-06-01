@@ -29,6 +29,15 @@ function showProduct(product) {
 
   clone.querySelector(".product-price").textContent = `${product.price} kr`;
 
+  if (product.discounted === true) {
+    clone.querySelector(".product-price").classList.add("discounted-price");
+
+    clone.querySelector(
+      ".product-price:last-of-type"
+    ).textContent = `${Math.round(
+      (100 / (100 - product.discount)) * product.price
+    )} kr`;
+  }
   const prod = document.querySelector("#products");
   prod.appendChild(clone);
 }
