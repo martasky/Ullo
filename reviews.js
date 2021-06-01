@@ -27,7 +27,9 @@ function showReview(review) {
 
   clone.querySelector(".review-title").textContent = review.title;
   clone.querySelector(".review-comment").textContent = review.comment;
-  if (review.stars === 5) {
+
+  if (review.stars === 4) {
+    clone.querySelector(".stars img:last-child").classList.add("hidden");
   }
 
   const rev = document.querySelector("#reviews");

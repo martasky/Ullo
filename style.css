@@ -331,6 +331,9 @@ span img {
   height: 1.95em;
   padding-right: 0.5em;
 }
+.hidden {
+  visibility: hidden;
+}
 
 /* -----------------------footer----------------------- */
 
