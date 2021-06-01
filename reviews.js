@@ -14,7 +14,7 @@ fetch("https://keaprojects21-50cf.restdb.io/rest/ullo-reviews", {
   });
 
 function showReviews(data) {
-  data.forEach((review) => {
+  data.forEach(function (review) {
     console.log(review);
     console.log("chuj ci w dupe");
 
@@ -22,7 +22,7 @@ function showReviews(data) {
   });
 }
 function showReview(review) {
-  const tempRev = document.querySelector("template").content;
+  const tempRev = document.querySelector("#reviews-template").content;
   const clone = tempRev.cloneNode(true);
 
   clone.querySelector(".review-title").textContent = review.title;

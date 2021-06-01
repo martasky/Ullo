@@ -200,7 +200,12 @@ span img {
   background-position: 20% 80%;
 }
 /* -----------------------benefits----------------------- */
-
+#benefits {
+  background-image: url(assets/gaussian2.png);
+  background-size: 100%;
+  background-repeat: repeat;
+  /* background-position: center; */
+}
 .benefit-description {
   color: var(--main-text-color);
   font-size: 1.1875rem;
