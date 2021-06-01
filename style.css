@@ -239,7 +239,7 @@ span img {
 .product-price {
   font-size: 1.375rem;
   font-weight: normal;
-  margin-top: -0.5em;
+  margin-top: -0.3em;
 }
 .product-card {
   background: rgba(47, 49, 54, 1) 0% 0% no-repeat padding-box;
@@ -540,8 +540,8 @@ footer div {
     font-size: 0.75rem;
   }
   .review-card {
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
   }
   .stars {
     margin-top: 1em;
@@ -686,16 +686,16 @@ footer div {
   /* -----------------------reviews----------------------- */
   #reviews {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-    grid-gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-gap: 2rem;
     justify-items: center;
   }
   .review-card {
-    /* padding-left: 1.5em;
-    padding-right: 1.5em; */
+    padding-left: 2em;
+    padding-right: 2em;
   }
   .review-title {
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: normal;
     margin-bottom: 0.5em;
   }
@@ -781,8 +781,8 @@ footer div {
   /* -----------------------reviews----------------------- */
   #reviews {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
     justify-items: center;
   }
   /* -----------------------footer----------------------- */
@@ -805,5 +805,11 @@ footer div {
     justify-items: center;
   }
   /* -----------------------reviews----------------------- */
+  #reviews {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+    justify-items: center;
+  }
   /* -----------------------footer----------------------- */
 }
