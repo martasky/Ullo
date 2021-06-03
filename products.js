@@ -26,6 +26,7 @@ function showProduct(product) {
 
   clone.querySelector(".product-name").textContent = product.name;
   clone.querySelector(".product-image").src = product.image;
+  clone.querySelector(".product-card a").href = product.link;
 
   clone.querySelector(".product-price").textContent = `${product.price} kr`;
 
