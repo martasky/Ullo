@@ -127,6 +127,7 @@ nav {
   background-size: cover;
   background-position: 59% 42%;
   padding: 1.5rem;
+  padding-top: 5em;
 }
 .subtitle p {
   font-size: 0.875rem;
@@ -686,12 +687,13 @@ footer div {
 }
 @media screen and (min-width: 1100px) {
   #header-wrapper {
-    padding-left: 6em;
-    padding-right: 6em;
+    padding-left: 7em;
+    padding-right: 7em;
+    padding-top: 10em;
   }
   nav {
-    padding-left: 6em;
-    padding-right: 6em;
+    padding-left: 7em;
+    padding-right: 7em;
     height: 90px;
   }
   nav .button {
@@ -851,14 +853,6 @@ footer div {
   }
 }
 @media screen and (min-width: 1300px) {
-  #header-wrapper {
-    padding-left: 6em;
-    padding-right: 6em;
-  }
-  nav {
-    padding-left: 6em;
-    padding-right: 6em;
-  }
   section {
     padding: 6em;
   }
@@ -884,6 +878,15 @@ footer div {
 }
 
 @media screen and (min-width: 1600px) {
+  #header-wrapper {
+    padding-left: 8em;
+    padding-right: 8em;
+    padding-top: 12em;
+  }
+  nav {
+    padding-left: 8em;
+    padding-right: 8em;
+  }
   /* -----------------------moods----------------------- */
   .moods {
     height: 800px;
