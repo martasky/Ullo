@@ -18,10 +18,10 @@
           <a href="https://ullo.dk/" target="_blank">Buy now</a>
         </button> -->
       </nav>
-      <div id="header-wrapper">
+      <div id="header-wrapper" class="lightoff">
         <div class="title">
           <h1>Light up your moments <span>with Ullo</span></h1>
-          <div class="toggle">
+          <div class="toggle-off">
             <div class="toggle-switch"></div>
           </div>
         </div>
@@ -234,27 +234,36 @@
             offers and tips and tricks to save energy and light up your life.
           </p>
           <div class="subscription-block">
-          <form>
-            <div class="form-email">
-              <input
-                placeholder="Enter your e-mail address"
-                type="email"
-                id="email"
-                name="email"
-                required
+            <form>
+              <div class="form-email">
+                <input
+                  placeholder="Enter your e-mail address"
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                />
+                <input class="secondary-button" type="submit" value="Sign up" />
+              </div>
+            </form>
+            <div class="thankyoumessage hidden">
+              <img
+                class="close-it"
+                alt="Close the thank you message"
+                src="assets/close-icon.svg"
               />
-              <input class="secondary-button" type="submit" value="Sign up" />
+              <h3>Thank you for subscribing!</h3>
             </div>
-          </form>
-          <div class="thankyoumessage hidden">
-            <img class="close-it" alt="Close the thank you message" src="assets/close-icon.svg">
-            <h3>Thank you for subscribing!</h3>
-          </div></div>
+          </div>
         </div>
       </section>
     </footer>
     <script src="products.js"></script>
     <script src="reviews.js"></script>
+    <<<<<<< HEAD
     <script src="subscribe.js"></script>
+    =======
+    <script src="toggle.js"></script>
+    >>>>>>> origin/toggle-button
   </body>
 </html>
