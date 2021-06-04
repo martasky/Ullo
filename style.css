@@ -409,6 +409,43 @@ footer div {
 .form-email .secondary-button {
   margin-top: 1em;
 }
+form {
+  grid-column: 1;
+  grid-row:1;
+}
+
+.subscription-block {
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows:1fr;
+}
+
+.thankyoumessage {
+  grid-column: 1;
+  grid-row: 1;
+  background-color:var(--turqouise-color);
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  box-shadow: 4px 4px 10px rgb(60 219 192 / 70%);
+  border-radius: 20px;
+  max-width: 500px;
+  padding: 2rem;
+}
+
+.thankyoumessage h3 {
+color:var(--main-text-color);
+font-size: 1.3rem;
+padding: 1rem;
+grid-column: 1/-1;
+grid-row: 2;
+text-align: center;}
+
+.thankyoumessage img {
+  max-width: 30%;
+  grid-column: 2;
+  justify-self:end;
+}
+
 
 /* .........................MEDIA QUERIES..................... */
 /* .........................MEDIA QUERIES..................... */
@@ -684,6 +721,15 @@ footer div {
     font-size: 0.85rem;
     border-radius: 25px;
   }
+
+  .thankyoumessage {
+    padding:1rem
+  }
+
+  .thankyoumessage img {
+    padding-top: 1rem;    
+  }
+
 }
 @media screen and (min-width: 1100px) {
   #header-wrapper {
@@ -875,6 +921,9 @@ footer div {
     justify-items: center;
   }
   /* -----------------------footer----------------------- */
+  .thankyoumessage {
+    padding:2rem
+  }
 }
 
 @media screen and (min-width: 1600px) {
@@ -910,4 +959,23 @@ footer div {
     justify-items: center;
   }
   /* -----------------------footer----------------------- */
-}
+  
+  
+  /* .subscription-block {
+    display:grid;
+    grid-template-columns: 1fr;
+  }
+  form {
+    grid-column: 1;
+    grid-row:1;
+  }
+  
+  .thankyoumessage {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .thankyoumessage img {
+   padding-top: 0;
+  }
+  
+} */
