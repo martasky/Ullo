@@ -123,17 +123,18 @@ nav {
   margin-bottom: 0.5em;
 }
 .lighton{
-  background-image: url(assets/bg-dark2.png);
+  background-image: url(assets/hand-buble1.jpg);
   background-size: cover;
-  background-position: 59% 42%;
+  background-position: 55% 42%;
+  
   padding: 1.5rem;
   padding-top: 5em;
 }
 
 .lightoff{
-  background-image: url(assets/bg-dark2-bw.png);
+  background-image: url(assets/hand-buble-dark2.jpg);
   background-size: cover;
-  background-position: 59% 42%;
+  background-position: 55% 42%;
   padding: 1.5rem;
   padding-top: 5em;
 }
@@ -474,7 +475,11 @@ text-align: center;}
   grid-column: 2;
   justify-self:end;
 }
+.consent {
+  font-size: 0.6rem;
+  
 
+}
 
 /* .........................MEDIA QUERIES..................... */
 /* .........................MEDIA QUERIES..................... */
@@ -502,6 +507,7 @@ text-align: center;}
   nav .button {
     width: 180px;
   }
+ 
   /* -----------------------moods----------------------- */
   .moods h3 {
     font-size: 1.8rem;
@@ -806,6 +812,7 @@ text-align: center;}
   .toggle-off {
     margin-top: 3em;
   }
+  
   /* -----------------------moods----------------------- */
   .moods h3 {
     font-size: 3.125rem;
