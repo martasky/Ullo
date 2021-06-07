@@ -985,7 +985,7 @@ text-align: center;}
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 
     justify-items: center;
-  }
+  }}
   /* -----------------------footer----------------------- */
   
   
@@ -1007,3 +1007,18 @@ text-align: center;}
   }
   
 } */
+
+.glow {
+  animation-name:glow;
+  animation-duration: 1s;
+  animation-iteration-count:1;
+  
+}
+
+@keyframes glow {
+0%,
+100% {
+  box-shadow: 1px 1px 14px 10px rgba(60, 219, 193, 0.589);
+}
+
+}
