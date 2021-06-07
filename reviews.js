@@ -16,7 +16,6 @@ fetch("https://keaprojects21-50cf.restdb.io/rest/ullo-reviews", {
 function showReviews(data) {
   data.forEach(function (review) {
     console.log(review);
-    console.log("chuj ci w dupe");
 
     showReview(review);
   });
