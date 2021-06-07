@@ -116,13 +116,14 @@ nav {
   height: 70px;
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 .logo img {
   width: 80px;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
-.lighton{
+.lighton {
   background-image: url(assets/bg-dark2.png);
   background-size: cover;
   background-position: 59% 42%;
@@ -130,7 +131,7 @@ nav {
   padding-top: 5em;
 }
 
-.lightoff{
+.lightoff {
   background-image: url(assets/bg-dark2-bw.png);
   background-size: cover;
   background-position: 59% 42%;
@@ -190,7 +191,7 @@ nav {
   border-radius: 100px;
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 3px 3px 6px #000000;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 span img {
@@ -212,16 +213,43 @@ span img {
 }
 
 .moods {
-  height: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 0;
+  height: 700px;
 }
-.moods:nth-of-type(1) {
-  background-image: url(assets/mood1.png);
 
+.videoDiv2 {
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  display: block;
+  position: relative;
+}
+
+.video2 {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+}
+
+.videoMessage2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+}
+
+.moods:nth-of-type(1) {
+  /*   background-image: url(assets/mood1.png);
   background-size: 300%;
-  background-position: 40% 60%;
+  background-position: 40% 60%; */
 }
 .secondary-button {
   color: var(--turqouise-color);
@@ -242,19 +270,19 @@ span img {
   box-shadow: none;
 }
 .moods:nth-of-type(2) {
-  background-image: url(assets/mood2.png);
+  /*   background-image: url(assets/mood2.png);
   background-size: cover;
-  background-position: 40% 60%;
+  background-position: 40% 60%; */
 }
 .moods:nth-of-type(3) {
-  background-image: url(assets/mood3.png);
+  /*   background-image: url(assets/mood3.png);
   background-size: cover;
-  background-position: 60% 40%;
+  background-position: 60% 40%; */
 }
 .moods:nth-of-type(4) {
-  background-image: url(assets/mood4.png);
+  /*   background-image: url(assets/mood4.png);
   background-size: cover;
-  background-position: 20% 80%;
+  background-position: 20% 80%; */
 }
 /* -----------------------benefits----------------------- */
 /* #benefits {
@@ -435,19 +463,19 @@ footer div {
 }
 form {
   grid-column: 1;
-  grid-row:1;
+  grid-row: 1;
 }
 
 .subscription-block {
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows:1fr;
+  grid-template-rows: 1fr;
 }
 
 .thankyoumessage {
   grid-column: 1;
   grid-row: 1;
-  background-color:var(--turqouise-color);
+  background-color: var(--turqouise-color);
   display: grid;
   grid-template-columns: 3fr 1fr;
   box-shadow: 4px 4px 10px rgb(60 219 192 / 70%);
@@ -457,19 +485,19 @@ form {
 }
 
 .thankyoumessage h3 {
-color:var(--main-text-color);
-font-size: 1.3rem;
-padding: 1rem;
-grid-column: 1/-1;
-grid-row: 2;
-text-align: center;}
+  color: var(--main-text-color);
+  font-size: 1.3rem;
+  padding: 1rem;
+  grid-column: 1/-1;
+  grid-row: 2;
+  text-align: center;
+}
 
 .thankyoumessage img {
   max-width: 30%;
   grid-column: 2;
-  justify-self:end;
+  justify-self: end;
 }
-
 
 /* .........................MEDIA QUERIES..................... */
 /* .........................MEDIA QUERIES..................... */
@@ -511,10 +539,16 @@ text-align: center;}
     text-align: right;
   }
   .moods-wrapper {
-    width: 70%;
+    /*    width: 70%; */
   }
-  .moods:nth-of-type(2) .moods-wrapper,
-  .moods:nth-of-type(4) .moods-wrapper {
+  .video2 {
+    height: 410px;
+  }
+  .videoMessage2 {
+    padding: 4rem;
+  }
+  .moods:nth-of-type(2) .moods-wrapper button,
+  .moods:nth-of-type(4) .moods-wrapper button {
     align-self: flex-end;
   }
   .moods .secondary-button {
@@ -631,6 +665,9 @@ text-align: center;}
 }
 @media screen and (min-width: 900px) {
   /* -----------------------moods----------------------- */
+  .videoMessage2 {
+    padding: 4rem;
+  }
   /* -----------------------benefits----------------------- */
   #benefits {
     display: grid;
@@ -747,13 +784,12 @@ text-align: center;}
   }
 
   .thankyoumessage {
-    padding:1rem
+    padding: 1rem;
   }
 
   .thankyoumessage img {
-    padding-top: 1rem;    
+    padding-top: 1rem;
   }
-
 }
 @media screen and (min-width: 1100px) {
   #header-wrapper {
@@ -819,10 +855,16 @@ text-align: center;}
     text-align: right;
   }
   .moods-wrapper {
-    width: 70%;
+    /* width: 70%; */
   }
-  .moods:nth-of-type(2) .moods-wrapper,
-  .moods:nth-of-type(4) .moods-wrapper {
+  .video2 {
+    height: 707px;
+  }
+  .videoMessage2 {
+    padding: 6rem;
+  }
+  .moods:nth-of-type(2) .moods-wrapper button,
+  .moods:nth-of-type(4) .moods-wrapper button {
     align-self: flex-end;
   }
   .moods .secondary-button {
@@ -950,7 +992,7 @@ text-align: center;}
   }
   /* -----------------------footer----------------------- */
   .thankyoumessage {
-    padding:2rem
+    padding: 2rem;
   }
 }
 
@@ -967,6 +1009,9 @@ text-align: center;}
   /* -----------------------moods----------------------- */
   .moods {
     height: 800px;
+  }
+  .video2 {
+    height: 807px;
   }
   /* -----------------------benefits----------------------- */
   .benefit-card img {
@@ -987,9 +1032,9 @@ text-align: center;}
     justify-items: center;
   }
   /* -----------------------footer----------------------- */
-  
-  
-  /* .subscription-block {
+}
+
+/* .subscription-block {
     display:grid;
     grid-template-columns: 1fr;
   }
