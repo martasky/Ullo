@@ -122,17 +122,17 @@ nav {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
-.lighton{
+.lighton {
   background-image: url(assets/hand-buble1.jpg);
   background-size: cover;
   background-position: 55% 42%;
-  
+
   padding: 1.5rem;
   padding-top: 5em;
 }
 
-.lightoff{
-  background-image: url(assets/hand-buble-dark2.jpg);
+.lightoff {
+  background-image: url(assets/hand-buble-dark.jpg);
   background-size: cover;
   background-position: 55% 42%;
   padding: 1.5rem;
@@ -191,7 +191,7 @@ nav {
   border-radius: 100px;
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 3px 3px 6px #000000;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 span img {
@@ -401,9 +401,7 @@ footer p {
   margin-bottom: 1em;
 }
 footer a:hover {
-
- box-shadow: none;
-
+  box-shadow: none;
 }
 footer div {
   margin-bottom: 4em;
@@ -441,19 +439,19 @@ footer div {
 }
 form {
   grid-column: 1;
-  grid-row:1;
+  grid-row: 1;
 }
 
 .subscription-block {
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows:1fr;
+  grid-template-rows: 1fr;
 }
 
 .thankyoumessage {
   grid-column: 1;
   grid-row: 1;
-  background-color:var(--turqouise-color);
+  background-color: var(--turqouise-color);
   display: grid;
   grid-template-columns: 3fr 1fr;
   box-shadow: 4px 4px 10px rgb(60 219 192 / 70%);
@@ -463,22 +461,21 @@ form {
 }
 
 .thankyoumessage h3 {
-color:var(--main-text-color);
-font-size: 1.3rem;
-padding: 1rem;
-grid-column: 1/-1;
-grid-row: 2;
-text-align: center;}
+  color: var(--main-text-color);
+  font-size: 1.3rem;
+  padding: 1rem;
+  grid-column: 1/-1;
+  grid-row: 2;
+  text-align: center;
+}
 
 .thankyoumessage img {
   max-width: 30%;
   grid-column: 2;
-  justify-self:end;
+  justify-self: end;
 }
 .consent {
   font-size: 0.6rem;
-  
-
 }
 
 /* .........................MEDIA QUERIES..................... */
@@ -507,7 +504,7 @@ text-align: center;}
   nav .button {
     width: 180px;
   }
- 
+
   /* -----------------------moods----------------------- */
   .moods h3 {
     font-size: 1.8rem;
@@ -641,6 +638,10 @@ text-align: center;}
   /* -----------------------footer----------------------- */
 }
 @media screen and (min-width: 900px) {
+  .subtitle p {
+    width: 80%;
+  }
+
   /* -----------------------moods----------------------- */
   /* -----------------------benefits----------------------- */
   #benefits {
@@ -758,13 +759,12 @@ text-align: center;}
   }
 
   .thankyoumessage {
-    padding:1rem
+    padding: 1rem;
   }
 
   .thankyoumessage img {
-    padding-top: 1rem;    
+    padding-top: 1rem;
   }
-
 }
 @media screen and (min-width: 1100px) {
   #header-wrapper {
@@ -812,7 +812,7 @@ text-align: center;}
   .toggle-off {
     margin-top: 3em;
   }
-  
+
   /* -----------------------moods----------------------- */
   .moods h3 {
     font-size: 3.125rem;
@@ -942,6 +942,10 @@ text-align: center;}
   section {
     padding: 6em;
   }
+  .subtitle p {
+    width: 70%;
+  }
+
   /* -----------------------moods----------------------- */
   /* -----------------------benefits----------------------- */
   .benefit-card img {
@@ -962,7 +966,7 @@ text-align: center;}
   }
   /* -----------------------footer----------------------- */
   .thankyoumessage {
-    padding:2rem
+    padding: 2rem;
   }
 }
 
@@ -997,11 +1001,11 @@ text-align: center;}
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 
     justify-items: center;
-  }}
-  /* -----------------------footer----------------------- */
-  
-  
-  /* .subscription-block {
+  }
+}
+/* -----------------------footer----------------------- */
+
+/* .subscription-block {
     display:grid;
     grid-template-columns: 1fr;
   }
@@ -1021,16 +1025,14 @@ text-align: center;}
 } */
 
 .glow {
-  animation-name:glow;
+  animation-name: glow;
   animation-duration: 1s;
-  animation-iteration-count:1;
-  
+  animation-iteration-count: 1;
 }
 
 @keyframes glow {
-0%,
-100% {
-  box-shadow: 1px 1px 14px 10px rgba(60, 219, 193, 0.589);
-}
-
+  0%,
+  100% {
+    box-shadow: 1px 1px 14px 10px rgba(60, 219, 193, 0.589);
+  }
 }
